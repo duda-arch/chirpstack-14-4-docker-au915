@@ -1,9 +1,9 @@
 [integration.mqtt.auth.generic]
-servers=["tcp://10.10.12.2:1884"]
-username="sa"
-password="10t10t"
+servers=["tcp://172.17.0.1:1883"]
+username="interface"
+password="9fgtykj"
 
 [integration.mqtt]
-event_topic_template="au915_0/gateway/{{ .GatewayID }}/event/{{ .EventType }}"
-state_topic_template="au915_0/gateway/{{ .GatewayID }}/state/{{ .StateType }}"
-command_topic_template="au915_0/gateway/{{ .GatewayID }}/command/#"
+event_topic_template="gateway/{{ .GatewayID }}/event/{{ .EventType }}"
+state_topic_template="gateway/{{ .GatewayID }}/state/{{ .StateType }}"
+command_topic_template="gateway/{{ .GatewayID }}/command/#"
